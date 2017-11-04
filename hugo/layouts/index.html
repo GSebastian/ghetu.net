@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+
+</head>
+
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container">
+        <div>
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                            <a class="no-underline" href="../index.html">
+                                <h1 class="blog-title-xs">Sebastian Ghetu</h1>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-8 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="menu1" class="bar bar-1 hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 hidden-xs">
+                            <div class="bar__module">
+                                <a class="no-underline" href="../index.html">
+                                    <h1 class="blog-title">Sebastian Ghetu</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="social-list list-inline list--hover">
+                                    <li>
+                                        <a href="mailto:sebastian@ghetu.net">
+                                            <i class="socicon socicon-mail icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/in/sebastianghetu">
+                                            <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/sebastianghetu">
+                                            <i class="socicon socicon-twitter icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/sebastian.ghetu">
+                                            <i class="socicon socicon-instagram icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar__module">
+                                <a class="btn btn--sm btn--primary type--uppercase" href="../index.html">
+                                    <span class="btn__text">
+                                        About me
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main-container">
+        <section class="space--sm">
+            <div class="container">
+                {{ range first 10 .Data.Pages }}
+                {{ if eq .Type "articles" }}
+                <div class="row">
+                    <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                        <div class="masonry masonry-blog-list">
+                            <div class="masonry__container masonry--active">
+                                <article class="masonry__item voh vnn filter-web-design" data-masonry-filter="Web Design" style="position: absolute; left: 0px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
+                                    <div class="article__title text-center">
+                                        <a href="{{ .Permalink }}">
+                                            <h2>{{ .Title }}</h2>
+                                        </a>
+                                    </div>
+                                    <div class="article__body">
+                                        {{ .Summary }}
+                                        <a href="{{ .Permalink }}">Continue reading »</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

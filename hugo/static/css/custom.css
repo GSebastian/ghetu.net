@@ -1,0 +1,19 @@
+/*! Place your custom styles here */
+
+.blog-title {
+    line-height: 0.8;
+    white-space: nowrap;
+}
+
+.blog-title-xs {
+    line-height: 0.95;
+}
+
+.no-underline:hover {
+    border: none;
+    text-decoration: none;
+}
+
+.article__share .btn {
+    margin-bottom: 0px;
+}
