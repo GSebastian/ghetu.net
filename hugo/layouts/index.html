@@ -93,13 +93,13 @@
                             <div class="masonry__container masonry--active">
                                 <article class="masonry__item voh vnn filter-web-design" data-masonry-filter="Web Design" style="position: absolute; left: 0px; transition-property: opacity, transform; transition-duration: 0.4s; transition-delay: 0ms;">
                                     <div class="article__title text-center">
-                                        <a href="{{ .Permalink }}">
+                                        <a href="{{ .RelPermalink }}">
                                             <h2>{{ .Title }}</h2>
                                         </a>
                                     </div>
                                     <div class="article__body">
                                         {{ .Summary }}
-                                        <a href="{{ .Permalink }}">Continue reading »</a>
+                                        <a href="{{ .RelPermalink }}">Continue reading »</a>
                                     </div>
                                 </article>
                             </div>
