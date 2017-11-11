@@ -2,7 +2,14 @@
 title: "My Third Article"
 date: 2017-11-04T22:05:59Z
 draft: false
+thumbnail: img/superman-min.jpg
+thumbnailalt: "Superman"
+description: "This is a test description. Does it work?"
+tags: ["test", "sample"]
 ---
+
+![Example image](/img/superman-min.jpg)
+
 Hi there. This is a random **test article**. What do you think _about_ it?
 
 #### Here's some Java code for you to check out ####

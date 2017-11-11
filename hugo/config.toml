@@ -1,4 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://sebastian-ghetu-blog.firebaseapp.com/"
 languageCode = "en-us"
 title = "Sebastian Ghetu - Software Developer"
 disqusShortname = "sebastian-ghetu-blog"
+
+[params]
+thumbnail = "img/default-thumbnail.jpg"
+thumbnailalt = "macbook on a desk"
+description = "I create software that makes a difference and never back down from a challenge."
+twitter_card_whitelisted = true

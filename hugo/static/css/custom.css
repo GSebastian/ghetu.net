@@ -14,6 +14,8 @@
     text-decoration: none;
 }
 
-.article__share .btn {
-    margin-bottom: 0px;
+@media all and (min-width: 446px) {
+    .article__share .btn {
+        margin-bottom: 15px;
+    }
 }
