@@ -17,72 +17,7 @@
 </head>
 
 <body data-smooth-scroll-offset="77">
-    <div class="nav-container">
-        <div>
-            <div class="bar bar--sm visible-xs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-4">
-                            <a class="no-underline" href="/blog/">
-                                <h1 class="blog-title-xs">Sebastian Ghetu</h1>
-                            </a>
-                        </div>
-                        <div class="col-xs-6 col-sm-8 text-right">
-                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
-                                <i class="icon icon--sm stack-interface stack-menu"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav id="menu1" class="bar bar-1 hidden-xs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 hidden-xs">
-                            <div class="bar__module">
-                                <a class="no-underline" href="/blog/">
-                                    <h1 class="blog-title">Sebastian Ghetu</h1>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-12 text-right text-left-xs text-left-sm">
-                            <div class="bar__module">
-                                <ul class="social-list list-inline list--hover">
-                                    <li>
-                                        <a href="mailto:sebastian@ghetu.net">
-                                            <i class="socicon socicon-mail icon icon--xs"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://linkedin.com/in/sebastianghetu">
-                                            <i class="socicon socicon-linkedin icon icon--xs"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/sebastianghetu">
-                                            <i class="socicon socicon-twitter icon icon--xs"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://instagram.com/sebastian.ghetu">
-                                            <i class="socicon socicon-instagram icon icon--xs"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="bar__module">
-                                <a class="btn btn--sm btn--primary type--uppercase" href="../index.html">
-                                    <span class="btn__text">
-                                        About me
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
+    {{ partial "_navi.html" .}}        
     <div class="main-container">
         <section class="space--sm">
             <div class="container">
