@@ -1,4 +1,4 @@
-/*! Place your custom styles here */
+/*! Blog */
 
 .blog-title {
     line-height: 0.8;
@@ -18,4 +18,31 @@
     .article__share .btn {
         margin-bottom: 15px;
     }
+}
+
+/*! Landing page */
+
+.boxed--smallpadding {
+    padding: 14px;
+}
+
+h5.smallbottom {
+    margin-bottom: 10px;
+}
+
+.btn--xs {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+a.btn.btn--xs {
+    margin-top: -0.5em;
+}
+
+.feature.boxed {
+    margin-bottom: 30px;
+}
+
+.imageblock {
+    overflow: hidden;
 }

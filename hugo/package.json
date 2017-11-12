@@ -13,6 +13,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-less": "^3.3.2",
+    "gulp-remove-empty-lines": "^0.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-shell": "^0.6.3",
     "less-plugin-autoprefix": "^1.5.1"
