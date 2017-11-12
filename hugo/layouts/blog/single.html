@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">    
     {{ partial "_ogmeta.html" . }}    
+    {{ template "_internal/google_analytics_async.html" . }}
 </head>
 
 <body data-smooth-scroll-offset="77">
@@ -97,13 +98,15 @@
                                 {{ .Content }}
                             </div>
                             <div class="article__share text-center">
-                                <a class="btn bg--facebook btn--icon" href="//www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank">
+                                <a class="btn bg--facebook btn--icon" href="https://www.facebook.com/dialog/share?app_id=179838799236537&display=page&href={{ .Permalink }}&redirect_uri={{ .Permalink }}" target="_blank">
                                     <span class="btn__text">
                                         <i class="socicon socicon-facebook"></i>
                                         Share on Facebook
                                     </span>
                                 </a>
-                                <a class="btn bg--twitter btn--icon" href="#">
+                                <a class="btn bg--twitter btn--icon" 
+                                
+                                href="//twitter.com/intent/tweet?url={{ .Permalink }}&via=SebastianGhetu">
                                     <span class="btn__text">
                                         <i class="socicon socicon-twitter"></i>
                                         Share on Twitter

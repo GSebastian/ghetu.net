@@ -1,11 +1,11 @@
 ---
-title: "My Sixth Article"
-date: 2017-11-12T00:27:59Z
+title: "My Third Article"
+date: 2017-11-04T22:05:59Z
 draft: false
-thumbnail: img/default-thumbnail.jpg
-thumbnailalt: ""
-description: "dsadasdas"
-tags: []
+thumbnail: img/superman-min.jpg
+thumbnailalt: "Superman"
+description: "This is a test description. Does it work?"
+tags: ["test", "sample"]
 ---
 
 ![Example image](/img/superman-min.jpg)
@@ -29,3 +29,8 @@ private BroadcastReceiver mPermissionGrantedReceiver = new BroadcastReceiver() {
 {{< / highlight >}}
 
 <!--more-->
+
+
+
+
+ 

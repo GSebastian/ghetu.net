@@ -4660,7 +4660,7 @@ section.parallax .row .background-image-holder {
   right: 1.23809524em;
 }
 .label:not([class*='bg--']) {
-  background: #31639C;
+  background: #2927d3;
 }
 .label.label--inline {
   position: relative;
@@ -7187,7 +7187,7 @@ input[type="submit"][type="submit"].btn--loading:after {
   border-color: #2927d3;
 }
 .bg--primary button.btn.btn--primary-1 {
-  border-color: #31639C;
+  border-color: #2927d3;
 }
 input,
 select {
@@ -7459,7 +7459,7 @@ label {
   color: #2927d3;
 }
 .bg--primary-1 .input-radio--innerlabel {
-  border-color: #3e7cc2;
+  border-color: #504fde;
 }
 .bg--primary-1 .input-radio--innerlabel:hover {
   border-color: #fff;
@@ -7469,7 +7469,7 @@ label {
   border-color: #fff;
 }
 .bg--primary-1 .input-radio--innerlabel.checked label {
-  color: #31639C;
+  color: #2927d3;
 }
 .input-select {
   position: relative;
@@ -9118,4 +9118,3 @@ footer.footer-7 {
     margin-right: auto;
   }
 }
-/**! 43. Pagination **/

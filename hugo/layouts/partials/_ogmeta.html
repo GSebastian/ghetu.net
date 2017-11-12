@@ -40,13 +40,13 @@
 
     <!-- Start of Twitter -->
     {{ if .Site.Params.twitter_card_whitelisted }} 
-    {{ if .Params.Description }}
-    <meta property="twitter:card" content="{{ .Description }}">
-    {{ else }}
-    <meta property="twitter:card" content="{{ .Title }}"> 
-    {{ end }} 
+    <meta property="twitter:card" content="summary">
     {{ end }}
-    <meta property="twitter:description" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}">
+    {{ if .Description }}
+    <meta property="twitter:description" content="{{ .Description }}">
+    {{ else if .Site.Params.Description }}
+    <meta property="twitter:description" content="{{ .Site.Params.Description }}">
+    {{ end }}
     <meta property="twitter:title" content="{{ .Title }}"> 
     {{ if .Params.thumbnail }}
     <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
