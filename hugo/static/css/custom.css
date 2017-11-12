@@ -46,3 +46,11 @@ a.btn.btn--xs {
 .imageblock {
     overflow: hidden;
 }
+
+.label:not([class*='bg--']) {
+    background: gray;
+}
+
+.list--hover li:not(:hover).full-opacity {
+    opacity: 1;
+}
