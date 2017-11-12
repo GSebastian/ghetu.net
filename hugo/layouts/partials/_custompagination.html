@@ -1,8 +1,5 @@
 {{ $pag := $.Paginator }}
 {{ if gt $pag.TotalPages 1 }}
-{{ with $pag.First }}
-<a class="pagination__prev" href="{{ .URL }}" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-{{ end }}
 <ol>
     <li
     {{ if not $pag.HasPrev }}class="disabled"{{ end }}>
@@ -22,7 +19,7 @@
     {{ end }}
     {{ if $showNumber }}
     <li
-    {{ if eq . $pag }}class="pagination__current"{{ end }}><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
+    {{ if eq . $pag }}class="pagination__current"{{ end }}>{{ if eq . $pag }}{{ .PageNumber }}{{else}}<a href="{{ .URL }}">{{ .PageNumber }}</a>{{ end }}</li>
     {{ else if ($.Scratch.Get "__paginator.shouldEllipse") }}
     <li class="disabled"><span aria-hidden="true">&hellip;</span></li>
     {{ end }}
@@ -32,7 +29,4 @@
     <a href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
 </ol>
-{{ with $pag.Last }}
-    <a class="pagination__next" href="{{ .URL }}" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-{{ end }}
 {{ end }}
