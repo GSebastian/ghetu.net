@@ -1,14 +1,15 @@
 var gulp = require("gulp"),
     less = require("gulp-less"),
-    path = require('path'),    
-    shell = require('gulp-shell'),    
+    path = require('path'),
+    shell = require('gulp-shell'),
     removeEmptyLines = require('gulp-remove-empty-lines'),
     purify = require('gulp-purifycss'),
     runSequence = require('run-sequence'),
     cleanCSS = require('gulp-clean-css'),
-    LessAutoprefix = require('less-plugin-autoprefix'),    
+    LessAutoprefix = require('less-plugin-autoprefix'),
+    htmlBeautify = require('gulp-html-beautify'),
     autoprefix = new LessAutoprefix({ browsers: ['last 10 versions'] })
-    
+
 // Compile LESS files to CSS
 gulp.task("less", function () {
     gulp.src("./src/less/theme.less")
@@ -20,11 +21,11 @@ gulp.task("less", function () {
 
 gulp.task("html-clean", function () {
     gulp.src('./public/**/*.html')
-    .pipe(removeEmptyLines({
-      removeComments: false
-    }))
-    .pipe(gulp.dest('./public/'));
-  });
+        .pipe(removeEmptyLines({
+            removeComments: false
+        }))
+        .pipe(gulp.dest('./public/'));
+});
 
 gulp.task("clear-generated", shell.task(['rm -rf ./public']));
 
@@ -32,17 +33,24 @@ gulp.task("build-hugo", shell.task(['hugo']));
 
 gulp.task('purge-css', () => {
     return gulp.src('./public/css/*.css')
-    .pipe(purify(['./public/**/*.html']))
-    .pipe(gulp.dest('./public/purged-css'));
+        .pipe(purify(['./public/**/*.html']))
+        .pipe(gulp.dest('./public/purged-css'));
 })
 
-gulp.task('minify-css',() => {
+gulp.task('minify-css', () => {
     return gulp.src('./public/purged-css/**/*.css')
-      .pipe(cleanCSS())
-      .pipe(gulp.dest('./public/minified-css/'));
-  });
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('./public/minified-css/'));
+});
 
 gulp.task('move-rename-optimized-css', shell.task(['rm -rf ./public/css', 'rm -rf ./public/purged-css', 'mv ./public/minified-css ./public/css']));
+
+gulp.task('htmlBeautify', function() {
+    var options = { indentSize: 2 };
+    gulp.src('./public/**/*.html')
+      .pipe(htmlBeautify(options))
+      .pipe(gulp.dest('./public/'))
+  });
 
 // Watch asset folder for changes
 gulp.task("watch", ["less"], function () {
@@ -56,14 +64,15 @@ gulp.task('firebase', shell.task([
 // Set watch as default task
 gulp.task("default", ["watch"])
 
-gulp.task('deploy', function(callback) {
+gulp.task('deploy', function (callback) {
     runSequence('less',
-                'clear-generated',
-                'build-hugo',
-                'html-clean',
-                'purge-css',
-                'minify-css',
-                'move-rename-optimized-css',
-                'firebase',
-                callback);
-  });
+        'clear-generated',
+        'build-hugo',
+        'html-clean',
+        'purge-css',
+        'minify-css',
+        'move-rename-optimized-css',
+        'htmlBeautify',
+        'firebase',
+        callback);
+});
