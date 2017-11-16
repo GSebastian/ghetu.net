@@ -8,6 +8,7 @@ var gulp = require("gulp"),
     cleanCSS = require('gulp-clean-css'),
     LessAutoprefix = require('less-plugin-autoprefix'),
     htmlBeautify = require('gulp-html-beautify'),
+    minify = require('gulp-minify'),
     autoprefix = new LessAutoprefix({ browsers: ['last 10 versions'] })
 
 // Compile LESS files to CSS
@@ -43,7 +44,20 @@ gulp.task('minify-css', () => {
         .pipe(gulp.dest('./public/minified-css/'));
 });
 
+gulp.task('minify-js', function() {
+    gulp.src('./public/js/*.js')
+      .pipe(minify({
+        ext:{
+            min:'.js'
+        },
+        noSource: true
+      }))
+      .pipe(gulp.dest('./public/minified-js/'))
+  });
+
 gulp.task('move-rename-optimized-css', shell.task(['rm -rf ./public/css', 'rm -rf ./public/purged-css', 'mv ./public/minified-css ./public/css']));
+
+gulp.task('move-rename-optimized-js', shell.task(['rm -rf ./public/js', 'mv ./public/minified-js ./public/js']));
 
 gulp.task('htmlBeautify', function() {
     var options = { indentSize: 2 };
@@ -71,7 +85,9 @@ gulp.task('deploy', function (callback) {
         'html-clean',
         'purge-css',
         'minify-css',
+        'minify-js',
         'move-rename-optimized-css',
+        'move-rename-optimized-js',        
         'htmlBeautify',
         'firebase',
         callback);

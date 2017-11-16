@@ -20,6 +20,12 @@
     }
 }
 
+img[src$='#center-image']
+{
+	display: block;
+    margin: 0 auto;
+}
+
 /*! Landing page */
 
 .boxed--smallpadding {
@@ -54,3 +60,4 @@ a.btn.btn--xs {
 .list--hover li:not(:hover).full-opacity {
     opacity: 1;
 }
+
