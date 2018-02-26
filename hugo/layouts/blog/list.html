@@ -25,7 +25,7 @@
                     <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
                         <div class="masonry masonry-blog-list">
                             <div class="masonry__container masonry--active">
-                                {{ range .Paginator.Pages.ByDate }}
+                                {{ range (.Paginator.Pages.ByDate.Reverse) }}
                                 <article class="masonry__item">
                                     <div class="article__title text-center">
                                         <a href="{{ .RelPermalink }}">
