@@ -1,6 +1,9 @@
 # [ghetu.net](https://ghetu.net) - my personal website
 My personal website, build using the Stack HTML and CSS elements and Hugo. Hosted on AWS, using S3, CloudFront and Route 53
 
+![desktop version of the website](/screenshots/desktop.png)
+![mobile version of the website](/screenshots/mobile.png)
+
 ## Tech stack ##
 
 ### [Hugo](https://gohugo.io/) ###
