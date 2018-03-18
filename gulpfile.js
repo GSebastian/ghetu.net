@@ -72,7 +72,7 @@ gulp.task("watch", ["less"], function () {
 })
 
 gulp.task('firebase', shell.task([
-    'firebase deploy --token ***REMOVED***'
+    'firebase deploy --token <INSERT TOKEN HERE>'
 ]))
 
 gulp.task('s3-clear', shell.task([
