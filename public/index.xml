@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sebastian Ghetu - Software Developer</title>
+    <link>https://ghetu.net/</link>
+    <description>Recent content on Sebastian Ghetu - Software Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Dec 2017 23:30:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://ghetu.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keeping Your Custom Email Address While Using Firebase Hosting</title>
+      <link>https://ghetu.net/blog/keeping-your-custom-email-address-while-using-firebase-hosting/</link>
+      <pubDate>Sat, 09 Dec 2017 23:30:19 +0000</pubDate>
+      
+      <guid>https://ghetu.net/blog/keeping-your-custom-email-address-while-using-firebase-hosting/</guid>
+      <description>&lt;figure &gt;
+    
+        &lt;img src=&#34;https://ghetu.net/img/post.jpg&#34; alt=&#34;Credit: Samuel Zeller via Unsplash&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Credit: Samuel Zeller via Unsplash
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;./building-a-speedy-static-blog---hugo-stack-and-firebase-hosting/&#34;&gt;my last post&lt;/a&gt; I praised Firebase Hosting for its speed and how easy I found deployments, however I completely neglected the fact that it doesn&amp;rsquo;t support email hosting. Almost two weeks after marking the switch I realised that my email was not working anymore (I know, I know, I should have figured it out earlier).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting</title>
+      <link>https://ghetu.net/blog/building-a-speedy-static-blog---hugo-stack-and-firebase-hosting/</link>
+      <pubDate>Mon, 13 Nov 2017 19:08:15 +0000</pubDate>
+      
+      <guid>https://ghetu.net/blog/building-a-speedy-static-blog---hugo-stack-and-firebase-hosting/</guid>
+      <description>&lt;figure &gt;
+    
+        &lt;img src=&#34;https://ghetu.net/img/speed.jpg&#34; alt=&#34;Credit: chuttersnap via Unsplash&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Credit: chuttersnap via Unsplash
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;Ever since I noticed that web hosting was part of Firebase&amp;rsquo;s offering I wanted to give it a go - &lt;em&gt;CDN hosting with a free tier, who could say no to that?&lt;/em&gt;. A couple of months ago I impulse-bought a front-end library called Stack but being the lazy Wordpress-loving guy I am, I never even considered that I could build a blog using it. After finding out about Hugo, a really well optimised CMS for building static websites, I finally connected the dots and the result is this blog.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

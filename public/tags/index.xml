@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sebastian Ghetu - Software Developer</title>
+    <link>https://ghetu.net/tags/</link>
+    <description>Recent content in Tags on Sebastian Ghetu - Software Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Dec 2017 23:30:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://ghetu.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Email Hosting</title>
+      <link>https://ghetu.net/tags/email-hosting/</link>
+      <pubDate>Sat, 09 Dec 2017 23:30:19 +0000</pubDate>
+      
+      <guid>https://ghetu.net/tags/email-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firebase Hosting</title>
+      <link>https://ghetu.net/tags/firebase-hosting/</link>
+      <pubDate>Sat, 09 Dec 2017 23:30:19 +0000</pubDate>
+      
+      <guid>https://ghetu.net/tags/firebase-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://ghetu.net/tags/hugo/</link>
+      <pubDate>Mon, 13 Nov 2017 19:08:15 +0000</pubDate>
+      
+      <guid>https://ghetu.net/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stack Template</title>
+      <link>https://ghetu.net/tags/stack-template/</link>
+      <pubDate>Mon, 13 Nov 2017 19:08:15 +0000</pubDate>
+      
+      <guid>https://ghetu.net/tags/stack-template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Development</title>
+      <link>https://ghetu.net/tags/web-development/</link>
+      <pubDate>Sat, 09 Dec 2017 23:30:19 +0000</pubDate>
+      
+      <guid>https://ghetu.net/tags/web-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Hosting</title>
+      <link>https://ghetu.net/tags/web-hosting/</link>
+      <pubDate>Sat, 09 Dec 2017 23:30:19 +0000</pubDate>
+      
+      <guid>https://ghetu.net/tags/web-hosting/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
