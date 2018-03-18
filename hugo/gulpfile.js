@@ -75,10 +75,18 @@ gulp.task('firebase', shell.task([
     'firebase deploy --token ***REMOVED***'
 ]))
 
+gulp.task('s3-clear', shell.task([
+    'aws s3 rm s3://ghetu.net --recursive'
+]))
+
+gulp.task('s3-upload', shell.task([
+    'aws s3 cp "/Users/sebastian/Documents/Personal\ development/sebastian.ghetu.net-blog-stack/hugo/public/" s3://ghetu.net --recursive'
+]))
+
 // Set watch as default task
 gulp.task("default", ["watch"])
 
-gulp.task('deploy', function (callback) {
+gulp.task('deploy-firebase', function (callback) {
     runSequence('less',
         'clear-generated',
         'build-hugo',
@@ -90,5 +98,21 @@ gulp.task('deploy', function (callback) {
         'move-rename-optimized-js',        
         'htmlBeautify',
         'firebase',
+        callback);
+});
+
+gulp.task('deploy-aws', function (callback) {
+    runSequence('less',
+        'clear-generated',
+        'build-hugo',
+        'html-clean',
+        'purge-css',
+        'minify-css',
+        'minify-js',
+        'move-rename-optimized-css',
+        'move-rename-optimized-js',        
+        'htmlBeautify',
+        's3-clear',
+        's3-upload',
         callback);
 });
