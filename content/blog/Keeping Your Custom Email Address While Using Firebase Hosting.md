@@ -1,11 +1,19 @@
 ---
-title: "Keeping Your Custom Email Address While Using Firebase Hosting"
-date: 2017-12-09T23:30:19Z
+title: Keeping Your Custom Email Address While Using Firebase Hosting
+date: 2017-12-09 23:30:19 +0000
 draft: false
 thumbnail: img/post.jpg
-thumbnailalt: "post boxes with newpapers hanging off"
-description: "In my last post I praised Firebase Hosting for its speed and how easy I found deployments, however I completely neglected the fact that it doesn't support email hosting. Almost two weeks after marking the switch I realised that my email was not working anymore (I know, I know, I should have figured it out earlier)."
-tags: ["web hosting", "web development", "firebase hosting", "email hosting"]
+thumbnailalt: post boxes with newpapers hanging off
+description: In my last post I praised Firebase Hosting for its speed and how easy
+  I found deployments, however I completely neglected the fact that it doesn't support
+  email hosting. Almost two weeks after marking the switch I realised that my email
+  was not working anymore (I know, I know, I should have figured it out earlier).
+tags:
+- web hosting
+- web development
+- firebase hosting
+- email hosting
+
 ---
 
 {{% figure src="/img/post.jpg" caption="Credit: Samuel Zeller via Unsplash" %}}

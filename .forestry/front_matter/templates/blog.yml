@@ -34,4 +34,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/blog/Keeping Your Custom Email Address While Using Firebase Hosting.md
 - content/blog/testing-forestry-is-so-much-fun-.md
