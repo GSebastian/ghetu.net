@@ -1,7 +1,6 @@
 +++
 date = "2018-06-24T13:09:33+00:00"
 description = "This is a test article to figure out how well Forestry works!"
-draft = true
 tags = ["testing 123", "and this is another tag", "this is a tag"]
 thumbnail = "/uploads/default-thumbnail.jpg"
 thumbnailalt = "laptop and books on a desk"
