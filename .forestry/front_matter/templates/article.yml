@@ -1,4 +1,13 @@
 ---
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: file
+  config:
+    maxSize: '1'
+- type: text
+  label: Title
+  name: title
+- type: textarea
+  label: Content
+  name: content
