@@ -1,11 +1,14 @@
 ---
-title: "My Third Article"
-date: 2017-11-04T22:05:59Z
+title: My Third Article
+date: 2017-11-04 22:05:59 +0000
 draft: true
 thumbnail: img/superman-min.jpg
-thumbnailalt: "Superman"
-description: "This is a test description. Does it work?"
-tags: ["test", "sample"]
+thumbnailalt: Superman
+description: This is a test description. Does it work?
+tags:
+- test
+- sample
+
 ---
 
 ![Example image](/img/superman-min.jpg)
