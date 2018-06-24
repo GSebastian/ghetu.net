@@ -1,11 +1,11 @@
-Paginate = 1
 baseURL = "https://ghetu.net"
 disqusShortname = "sebastian-ghetu-blog"
 googleAnalytics = "UA-67267820-1"
 languageCode = "en-us"
 title = "Sebastian Ghetu - Software Developer"
+
 [params]
-Paginate = "2"
+Paginate = 5
 description = "I create software that makes a difference and never back down from a challenge."
 thumbnail = "img/default-thumbnail.jpg"
 thumbnailalt = "macbook on a desk"
