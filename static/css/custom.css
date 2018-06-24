@@ -61,3 +61,10 @@ a.btn.btn--xs {
     opacity: 1;
 }
 
+i.socicon {
+    vertical-align: middle;
+}
+
+b.icon {
+    vertical-align: middle;
+}
