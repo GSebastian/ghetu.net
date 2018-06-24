@@ -11,3 +11,5 @@ fields:
 - type: textarea
   label: Content
   name: content
+pages:
+- content/blog/forestry-test-article.md
