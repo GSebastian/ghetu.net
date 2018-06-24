@@ -1,11 +1,17 @@
 ---
-title: "Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting"
-date: 2017-11-13T19:08:15Z
+title: Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting
+date: 2017-11-13 19:08:15 +0000
 draft: false
-thumbnail: /img/speed.jpg
-thumbnailalt: "racing car speeding"
-description: "Ever since I noticed that web hosting was part of Firebase's offering I wanted to give it a go - CDN hosting with a free tier, who could say no to that?"
-tags: ["web development", "stack template", "firebase hosting", "hugo"]
+thumbnail: "/img/speed.jpg"
+thumbnailalt: racing car speeding
+description: Ever since I noticed that web hosting was part of Firebase's offering
+  I wanted to give it a go - CDN hosting with a free tier, who could say no to that?
+tags:
+- web development
+- stack template
+- firebase hosting
+- hugo
+
 ---
 
 {{% figure src="/img/speed.jpg" caption="Credit: chuttersnap via Unsplash" %}}
