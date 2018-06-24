@@ -1,14 +1,12 @@
+Paginate = 1
 baseURL = "https://ghetu.net"
+disqusShortname = "sebastian-ghetu-blog"
+googleAnalytics = "UA-67267820-1"
 languageCode = "en-us"
 title = "Sebastian Ghetu - Software Developer"
-disqusShortname = "sebastian-ghetu-blog"
-Paginate = 1
-googleAnalytics = "UA-67267820-1"
-
 [params]
+Paginate = "2"
+description = "I create software that makes a difference and never back down from a challenge."
 thumbnail = "img/default-thumbnail.jpg"
 thumbnailalt = "macbook on a desk"
-description = "I create software that makes a difference and never back down from a challenge."
 twitter_card_whitelisted = true
-Paginate = 5
-
