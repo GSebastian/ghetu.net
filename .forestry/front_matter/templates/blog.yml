@@ -32,5 +32,6 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/blog/creating-another-article.md
 - content/blog/Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting.md
 - content/blog/Keeping Your Custom Email Address While Using Firebase Hosting.md
