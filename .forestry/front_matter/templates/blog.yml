@@ -33,3 +33,5 @@ fields:
   type: list
   hidden: false
   default: ''
+pages:
+- content/blog/testing-forestry-is-so-much-fun-.md
