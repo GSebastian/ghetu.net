@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting - Sebastian Ghetu - Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <meta name="title" content="Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting | Sebastian Ghetu - Software Developer">
+    <meta property="og:title" content="Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Ever since I noticed that web hosting was part of Firebase&#39;s offering I wanted to give it a go - CDN hosting with a free tier, who could say no to that?">
+    <meta property="og:url" content="https://ghetu.net/blog/building-a-speedy-static-blog---hugo-stack-and-firebase-hosting/">
+    <meta property="og:site_name" content="Sebastian Ghetu - Software Developer">
+    <meta property="og:image" content="https://ghetu.net/img/speed.jpg">
+    <meta property="og:image:alt" content="racing car speeding">
+    <meta property="article:tag" content="web development">
+    <meta property="article:tag" content="stack template">
+    <meta property="article:tag" content="firebase hosting">
+    <meta property="article:tag" content="hugo">
+    <meta property="fb:app_id" content="179838799236537">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:description" content="Ever since I noticed that web hosting was part of Firebase&#39;s offering I wanted to give it a go - CDN hosting with a free tier, who could say no to that?">
+    <meta property="twitter:title" content="Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting">
+    <meta property="twitter:image" content="https://ghetu.net/img/speed.jpg">
+    <meta name="generator" content="Hugo 0.49.2" />
+    <script type="application/javascript">
+        var doNotTrack = false;
+        if (!doNotTrack) {
+            window.ga = window.ga || function() {
+                (ga.q = ga.q || []).push(arguments)
+            };
+            ga.l = +new Date;
+            ga('create', 'UA-67267820-1', 'auto');
+            ga('send', 'pageview');
+        }
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container">
+        <div>
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                            <a class="no-underline" href="/blog/">
+                                <h1 class="blog-title-xs">Sebastian Ghetu</h1>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-8 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="menu1" class="bar bar-1 hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 hidden-xs">
+                            <div class="bar__module">
+                                <a class="no-underline" href="/blog/">
+                                    <h1 class="blog-title">Sebastian Ghetu</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="social-list list-inline list--hover">
+                                    <li>
+                                        <a href="mailto:sebastian@ghetu.net">
+                                            <i class="socicon socicon-mail icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/in/sebastianghetu">
+                                            <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/GSebastian">
+                                            <i class="socicon socicon-github icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar__module">
+                                <a class="btn btn--sm btn--primary" href="/">
+                                    <span class="btn__text">
+                                        About me
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main-container">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                        <article>
+                            <div class="article__title text-center">
+                                <h1 class="h2">Building a Speedy Static Blog - Hugo, Stack and Firebase Hosting</h1>
+                            </div>
+                            <div class="article__body">
+                                <figure>
+                                    <img src="/img/speed.jpg" alt="Credit: chuttersnap via Unsplash" />
+                                    <figcaption>
+                                        <p>
+                                            Credit: chuttersnap via Unsplash
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                                <p>&nbsp;</p>
+                                <p>Ever since I noticed that web hosting was part of Firebase&rsquo;s offering I wanted to give it a go - <em>CDN hosting with a free tier, who could say no to that?</em>. A couple of months ago I impulse-bought a front-end
+                                    library called Stack but being the lazy Wordpress-loving guy I am, I never even considered that I could build a blog using it. After finding out about Hugo, a really well optimised CMS for building static websites,
+                                    I finally connected the dots and the result is this blog.</p>
+                                <p></p>
+                                <h3 id="firebase-hosting">Firebase Hosting</h3>
+                                <p><a href="https://firebase.google.com/docs/hosting/">Firebase Hosting</a></p>
+                                <p>Snappy loading times are not the sole reason why Firebase Hosting is an interesting proposition. I found myself deploying the website to Firebase a lot more than I probably should have because of the really convenient CLI.
+                                    Furthermore, the pricing model is really friendly for a small development blog, with a free tier of 1GB of storage and 10GB of traffic (and $0.026/GB $0.15/GB onwards). Last but not least, deployments are all saved
+                                    so they can be reverted almost instantly - just in case something goes horribly wrong.</p>
+                                <h3 id="stack">Stack</h3>
+                                <p><a href="https://themeforest.net/item/stack-multipurpose-html-with-page-builder/19337626">Demo / Themeforrest</a></p>
+                                <p>Stack is a collection of predefined HTML elements and custom CSS that make building a good-looking website fairly easy. It even comes with a visual building tool called Variant that&rsquo;s great for laying out a basic
+                                    structure that can be later customised. Though the number of blocks, elements and CSS classes that it offers can be quite daunting, I found it really useful to just go through their samples and pick the things I liked.</p>
+                                <h3 id="hugo">Hugo</h3>
+                                <p><a href="https://gohugo.io">Hugo</a></p>
+                                <p>Lastly, Hugo had the steepest learning curve out of the three, though nowhere near as steep as learning how to build for Wordpress. Posts are generated from markdown files and, as with any static website framework, naming
+                                    conventions and file structure are crucial to getting things to work.</p>
+                                <h4 id="a-few-of-the-things-that-really-stuck-with-me-please-note-that-there-are-other-ways-of-achieving-the-same-results">A few of the things that really stuck with me (please note that there are other ways of achieving the same results)</h4>
+                                <ul>
+                                    <li>• templates are organised into <em>single</em> and <em>list</em> pages and need to be named <code>single.html</code> and <code>list.html</code> respectively</li>
+                                    <li>• furthermore, as I mentioned above, the file structure is crucial. For example for this website, it&rsquo;s as follows:</li>
+                                </ul>
+                                <pre><code>- /layouts
+  - index.html
+  - /blog
+    - list.html
+    - single.html 
+</code></pre>
+                                <ul>
+                                    <li>• there are couple of really useful internal templates for Disqus comments and Google Analytics that should help you get everything up and running in a matter of minutes. More details can be found <a href="https://gohugo.io/templates/internal/">here</a></li>
+                                    <li>• other templates include pagination, Opengraph and Twitter tags, though they&rsquo;re not documented</li>
+                                    <li>• archetypes are a really useful and flexible way of setting up the SEO tags / metadata for your posts. Here&rsquo;s a basic post archetype:</li>
+                                </ul>
+                                <pre><code>---
+title: &quot;{{ replace .TranslationBaseName &quot;-&quot; &quot; &quot; | title }}&quot;
+date: {{ .Date }}
+draft: true
+thumbnail: img/default-thumbnail.jpg
+thumbnailalt: &quot;&quot;
+description: &quot;&quot;
+tags: []
+---
+</code></pre>
+                                <p><img src="https://media.giphy.com/media/XAlKUAC4S1X32/giphy.gif#center-image" alt="warp speed star wars" /></p>
+                                <h3 id="the-results">The results</h3>
+                                <p>After some CSS purging and JS minifying I put the website to the test. The results via <a href="https://dotcom-tools.com">dotcom-tools.com</a> (what a great tool by the way!) for the landing page were:</p>
+                                <ul>
+                                    <li>• <code>1.2 sec</code> average first visit</li>
+                                    <li>• <code>429.9 ms</code> average second visit</li>
+                                    <li>• <code>342.5 KB</code> downloaded for the first visit</li>
+                                    <li>• <code>35 b</code> downloaded for the second visit</li>
+                                </ul>
+                                <p>And the results for loading a single article (this one!) were:</p>
+                                <ul>
+                                    <li>• <code>1.7 sec</code> average first visit</li>
+                                    <li>• <code>506.9 ms</code> average second visit</li>
+                                    <li>• <code>399.3 KB</code> downloaded for the first visit</li>
+                                    <li>• <code>35 b</code> downloaded for the second visit</li>
+                                </ul>
+                                <blockquote>
+                                    <p>Warp speed ahead, Chewy!</p>
+                                </blockquote>
+                            </div>
+                            <div class="article__share text-center">
+                                <a class="btn bg--facebook btn--icon" href="https://www.facebook.com/dialog/share?app_id=179838799236537&display=page&href=https%3a%2f%2fghetu.net%2fblog%2fbuilding-a-speedy-static-blog---hugo-stack-and-firebase-hosting%2f" target="_blank">
+                                    <span class="btn__text">
+                                        <i class="socicon socicon-facebook"></i>
+                                        Share on Facebook
+                                    </span>
+                                </a>
+                                <a class="btn bg--twitter btn--icon" href="//twitter.com/intent/tweet?url=https%3a%2f%2fghetu.net%2fblog%2fbuilding-a-speedy-static-blog---hugo-stack-and-firebase-hosting%2f&via=SebastianGhetu">
+                                    <span class="btn__text">
+                                        <i class="socicon socicon-twitter"></i>
+                                        Share on Twitter
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                        <div id="disqus_thread"></div>
+                        <script type="application/javascript">
+                            var disqus_config = function() {};
+                            (function() {
+                                if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                                    document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+                                    return;
+                                }
+                                var d = document,
+                                    s = d.createElement('script');
+                                s.async = true;
+                                s.src = '//' + "sebastian-ghetu-blog" + '.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>

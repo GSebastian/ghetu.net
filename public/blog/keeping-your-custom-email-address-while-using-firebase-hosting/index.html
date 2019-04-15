@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Keeping Your Custom Email Address While Using Firebase Hosting - Sebastian Ghetu - Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <meta name="title" content="Keeping Your Custom Email Address While Using Firebase Hosting | Sebastian Ghetu - Software Developer">
+    <meta property="og:title" content="Keeping Your Custom Email Address While Using Firebase Hosting">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="In my last post I praised Firebase Hosting for its speed and how easy I found deployments, however I completely neglected the fact that it doesn&#39;t support email hosting. Almost two weeks after marking the switch I realised that my email was not working anymore (I know, I know, I should have figured it out earlier).">
+    <meta property="og:url" content="https://ghetu.net/blog/keeping-your-custom-email-address-while-using-firebase-hosting/">
+    <meta property="og:site_name" content="Sebastian Ghetu - Software Developer">
+    <meta property="og:image" content="https://ghetu.netimg/post.jpg">
+    <meta property="og:image:alt" content="post boxes with newpapers hanging off">
+    <meta property="article:tag" content="web hosting">
+    <meta property="article:tag" content="web development">
+    <meta property="article:tag" content="firebase hosting">
+    <meta property="article:tag" content="email hosting">
+    <meta property="fb:app_id" content="179838799236537">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:description" content="In my last post I praised Firebase Hosting for its speed and how easy I found deployments, however I completely neglected the fact that it doesn&#39;t support email hosting. Almost two weeks after marking the switch I realised that my email was not working anymore (I know, I know, I should have figured it out earlier).">
+    <meta property="twitter:title" content="Keeping Your Custom Email Address While Using Firebase Hosting">
+    <meta property="twitter:image" content="https://ghetu.netimg/post.jpg">
+    <meta name="generator" content="Hugo 0.49.2" />
+    <script type="application/javascript">
+        var doNotTrack = false;
+        if (!doNotTrack) {
+            window.ga = window.ga || function() {
+                (ga.q = ga.q || []).push(arguments)
+            };
+            ga.l = +new Date;
+            ga('create', 'UA-67267820-1', 'auto');
+            ga('send', 'pageview');
+        }
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container">
+        <div>
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                            <a class="no-underline" href="/blog/">
+                                <h1 class="blog-title-xs">Sebastian Ghetu</h1>
+                            </a>
+                        </div>
+                        <div class="col-xs-6 col-sm-8 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav id="menu1" class="bar bar-1 hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 hidden-xs">
+                            <div class="bar__module">
+                                <a class="no-underline" href="/blog/">
+                                    <h1 class="blog-title">Sebastian Ghetu</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="social-list list-inline list--hover">
+                                    <li>
+                                        <a href="mailto:sebastian@ghetu.net">
+                                            <i class="socicon socicon-mail icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://linkedin.com/in/sebastianghetu">
+                                            <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/GSebastian">
+                                            <i class="socicon socicon-github icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bar__module">
+                                <a class="btn btn--sm btn--primary" href="/">
+                                    <span class="btn__text">
+                                        About me
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main-container">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                        <article>
+                            <div class="article__title text-center">
+                                <h1 class="h2">Keeping Your Custom Email Address While Using Firebase Hosting</h1>
+                            </div>
+                            <div class="article__body">
+                                <figure>
+                                    <img src="/img/post.jpg" alt="Credit: Samuel Zeller via Unsplash" />
+                                    <figcaption>
+                                        <p>
+                                            Credit: Samuel Zeller via Unsplash
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                                <p>&nbsp;</p>
+                                <p>In <a href="./building-a-speedy-static-blog---hugo-stack-and-firebase-hosting/">my last post</a> I praised Firebase Hosting for its speed and how easy I found deployments, however I completely neglected the fact that it
+                                    doesn&rsquo;t support email hosting. Almost two weeks after marking the switch I realised that my email was not working anymore (I know, I know, I should have figured it out earlier).</p>
+                                <p></p>
+                                <h3 id="what-went-wrong">What Went Wrong</h3>
+                                <p>Short answer: <strong>I pointed my domain&rsquo;s A-type DNS zone records directly to Firebase</strong>.</p>
+                                <p>My email setup uses <em>ghetu.net</em> as a domain, with MX records pointing to <a href="https://www.zoho.com/mail/">Zoho Mail</a> - this allows me to get 5GB of free storage while using a custom domain. Quite obviously,
+                                    setting MX records requires a hosting provider that supports email, so when I pointed my domain to Firebase I made those MX records vanish into the abyss as well as all of my incoming emails.</p>
+                                <h3 id="how-i-fixed-it">How I Fixed It</h3>
+                                <p>The <a href="https://groups.google.com/d/msg/firebase-talk/Dr-jYjZ7cKY/kzldBzZSBAAJ">high-level solution</a> came from the Firebase Google Group - <strong>using a hosting provider that does support email and redirecting just the http traffic to Firebase</strong>.</p>
+                                <p>Instead of pointing the A-type DNS zone records directly to Firebase (from my domain name provider&rsquo;s website), I switched them back to my old hosting provider (which supports email). Afterwards, from my old hosting
+                                    provider&rsquo;s cPanel, I removed the existing A-type records (which pointed http traffic to my old host) and added the ones provided by Firebase.</p>
+                                <figure>
+                                    <img src="/img/cpanel-overview-domains.png" alt="From cPanel, navigate to the Domains section and select Zone Editor" />
+                                    <figcaption>
+                                        <p>
+                                            From cPanel, navigate to the Domains section and select Zone Editor
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/img/cpanel-zone-editor.png" alt="Clicking Manage takes you to all DNS records - remove A records for the domain/subdomain that you want to be hosted on Firebase" />
+                                    <figcaption>
+                                        <p>
+                                            Clicking Manage takes you to all DNS records - remove A records for the domain/subdomain that you want to be hosted on Firebase
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="/img/cpanel-add-a-record.png" alt="Add the A records provided by Firebase in the console" />
+                                    <figcaption>
+                                        <p>
+                                            Add the A records provided by Firebase in the console
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                                <p>&nbsp;</p>
+                                <p>As a result, incoming http requests get sent to my old hosting provider which routes them to Firebase. Incoming mail requests also get sent to my old hosting provider which routes them to Zoho Mail. Happy days!</p>
+                                <p><img src="https://media.giphy.com/media/u8IJtQ7dfZhn2/giphy.gif#center-image" alt="bunny rabbit chewing a letter" /></p>
+                            </div>
+                            <div class="article__share text-center">
+                                <a class="btn bg--facebook btn--icon" href="https://www.facebook.com/dialog/share?app_id=179838799236537&display=page&href=https%3a%2f%2fghetu.net%2fblog%2fkeeping-your-custom-email-address-while-using-firebase-hosting%2f" target="_blank">
+                                    <span class="btn__text">
+                                        <i class="socicon socicon-facebook"></i>
+                                        Share on Facebook
+                                    </span>
+                                </a>
+                                <a class="btn bg--twitter btn--icon" href="//twitter.com/intent/tweet?url=https%3a%2f%2fghetu.net%2fblog%2fkeeping-your-custom-email-address-while-using-firebase-hosting%2f&via=SebastianGhetu">
+                                    <span class="btn__text">
+                                        <i class="socicon socicon-twitter"></i>
+                                        Share on Twitter
+                                    </span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+                        <div id="disqus_thread"></div>
+                        <script type="application/javascript">
+                            var disqus_config = function() {};
+                            (function() {
+                                if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+                                    document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+                                    return;
+                                }
+                                var d = document,
+                                    s = d.createElement('script');
+                                s.async = true;
+                                s.src = '//' + "sebastian-ghetu-blog" + '.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>

@@ -80,7 +80,7 @@ gulp.task('s3-clear', shell.task([
 ]))
 
 gulp.task('s3-upload', shell.task([
-    'aws s3 cp "/Users/sebastian/Documents/Personal\ development/sebastian.ghetu.net-blog-stack/hugo/public/" s3://ghetu.net --recursive'
+    'aws s3 cp "/Users/seb/Documents/Development/ghetu.net/public/" s3://ghetu.net --recursive'
 ]))
 
 // Set watch as default task
